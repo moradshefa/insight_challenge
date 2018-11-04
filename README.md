@@ -11,7 +11,7 @@ Note, in space both approaches were bottlenecked by the hashmaps so they were li
 
 How to run my code:
 
-To run the code you can compile the java file `src/h1b_counting.java` and then use the java interpreter to run them.
+To run the code you can compile the java file `src/h1b_counting.java` and then use the java interpreter to run it.
 
 Alternatively, you can edit the `run.sh` file.
 
