@@ -74,7 +74,7 @@ public class h1b_counting {
                     continue;
                 }
                 state = lineSplit[stateI];
-                title = lineSplit[titleI];
+                title = lineSplit[titleI].replace("\"", "");
                 status = lineSplit[statusI];
 
                 if (status.compareTo("CERTIFIED") == 0) {
@@ -106,7 +106,7 @@ public class h1b_counting {
             fileWriter = new FileWriter(args[1]);
             fileWriter.write("TOP_OCCUPATIONS;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE\n");
             for (int k = 0; k < Math.min(occupations_.size(), 10); k++)
-                fileWriter.write(occupations_.get(k).val.replace("\"", "") + ';' + occupations_.get(k).accepted + ';' + String.format("%.1f", 100*(float)occupations_.get(k).accepted/totalCertified) +"%\n");
+                fileWriter.write(occupations_.get(k).val + ';' + occupations_.get(k).accepted + ';' + String.format("%.1f", 100*(float)occupations_.get(k).accepted/totalCertified) +"%\n");
             fileWriter.close();
         } catch (Exception E) {
             System.out.println(E.getMessage());
