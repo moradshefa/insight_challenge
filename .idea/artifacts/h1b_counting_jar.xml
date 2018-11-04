@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="h1b_counting:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/h1b_counting_jar</output-path>
-    <root id="archive" name="h1b_counting.jar">
-      <element id="module-output" name="h1b_counting" />
-    </root>
-  </artifact>
-</component>
