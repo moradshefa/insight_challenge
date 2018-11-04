@@ -21,7 +21,7 @@ class Node implements Comparable<Node>{
 
     @Override
     public int compareTo(Node n2) {
-        // First sort bast one number of accepted in decreasing order
+        // First sort based one number of accepted in decreasing order
         int acceptedRateComparitor = this.accepted - n2.accepted;
         if (acceptedRateComparitor != 0)
             return -acceptedRateComparitor;
