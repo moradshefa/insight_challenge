@@ -4,6 +4,5 @@
 #
 #python ./src/h1b_counting.py ./input/h1b_input.csv ./output/top_10_occupations.txt ./output/top_10_states.txt
 
-echo $PWD
 javac src/h1b_counting.java
 java -classpath src/ h1b_counting ./input/h1b_input.csv ./output/top_10_occupations.txt ./output/top_10_states.txt
