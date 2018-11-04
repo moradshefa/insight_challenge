@@ -23,7 +23,7 @@ java -classpath src/ h1b_counting ./input/h1b_input.csv ./output/top_10_occupati
 can be replaced with
 
 ```
-java -classpath src/ h1b_counting <path to input csv file> <path to top_10_occupations.txt file> <path to top_10_states.txt file>
+java -classpath src/ h1b_counting <path to input csv file> <path for top_10_occupations.txt file> <path for top_10_states.txt file>
 ```
 
 
